@@ -10,4 +10,11 @@ public class Photo {
     private String url;
     private Float rating;
 
+    public String getUrl() {
+        return url;
+    }
+
+    public Float getRating() {
+        return rating;
+    }
 }

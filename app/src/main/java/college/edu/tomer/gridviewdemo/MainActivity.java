@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridView;
 
+import java.util.ArrayList;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -38,6 +40,22 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        initPhotoAdapter();
+    }
+
+    private void initPhotoAdapter() {
+
+        ArrayList<Photo> photos = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            Photo photo = new Photo("http://cdn6.bigcommerce.com/s-01bgfn/products/554/images/762/52503-71__48350.1438861707.200.267.jpg", 4.5f);
+            Photo photo2 = new Photo("https://www.skyverge.com/wp-content/uploads/2012/05/github-logo.png", 4.5f);
+            photos.add(photo);
+            photos.add(photo2);
+        }
+        PhotoGridAdapter adapter =
+                new PhotoGridAdapter(photos, this);
+        photoGrid.setAdapter(adapter);
     }
 
     @Override
