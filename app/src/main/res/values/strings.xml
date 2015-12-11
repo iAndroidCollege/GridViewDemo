@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">GridViewDemo</string>
+    <string name="app_name">Grid View Demo</string>
     <string name="action_settings">Settings</string>
+    <string name="action_android_title">Android</string>
+    <string name="set_alarm">Alarm</string>
+    <string name="et_hour">hour</string>
+    <string name="et_minutes">minutes...</string>
+    <string name="photo_grid_item">photo grid item</string>
+    <string name="title_activity_photo_grid">PhotoGridActivity</string>
 </resources>
